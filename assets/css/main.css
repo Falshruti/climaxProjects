@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lora:wght@400;500;600;700&display=swap');
 :root {
     --body-clr: #e3ece7;
-    --main-clr: #125491;
+    --main-clr: #1261ac;
     --btn-clr: #0c0a20;
     --primary-clr: #ffffff;
     --secondary-clr: #1A1A1A;
@@ -334,7 +334,7 @@ p {
 }
 
 .partner {
-    background-color: #231947;
+    background-color: #1261ac;
     border-radius: 10px;
     padding: 90px;
     margin-top: 106px;
