@@ -2355,11 +2355,11 @@ p {
 }
 
 .footer {
-    background-color: var(--secondary-clr)
+    background-color: #d8ecff;
 }
 
 .footer .subscribe {
-    background-color: #588983;
+    background-color: #1261AC;
     padding: 97px 80px;
     border-radius: 10px;
     transform: translateY(-50%)
