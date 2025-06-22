@@ -1108,7 +1108,7 @@ p {
 }
 
 .services__title .common__btn {
-    background-color: var(--btn-clr);
+    background-color:#f0efff;
     color: var(--secondary-clr)
 }
 
@@ -1149,7 +1149,8 @@ p {
     width: 100%;
     font-size: 42px;
     font-weight: 600;
-    transition: all .5s ease-in-out
+    transition: all .5s ease-in-out;
+    color:var(--secondary-clr)
 }
 
 .services__wapper_list li .service__name sup {
