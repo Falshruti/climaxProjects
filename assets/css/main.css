@@ -233,15 +233,36 @@ p {
 
 .circle:hover {
     background-color: var(--btn-clr);
-    color: var(--secondary-clr)
+    color: white;
 }
 
 .circle:hover .black {
-    display: block
+    display: none;
 }
 
-.circle:hover .yellow {
-    display: none
+.circle:hover .white {
+    display: block;
+}
+
+.circle .white {
+    display: none;
+}
+
+.common__btn:hover{
+    background-color: var(--btn-clr) !important;
+    color: white !important;
+}
+
+.common__btn:hover .black {
+    display: none;
+}
+
+.common__btn:hover .white {
+    display: block;
+}
+
+.common__btn .white {
+    display: none;
 }
 
 .circle__black {
@@ -1189,9 +1210,10 @@ p {
     transition: all .5s ease-in-out
 }
 
-.services__wapper_list li .icon .black {
+.services__wapper_list li .icon .white {
     display: none
 }
+
 
 @media(max-width: 991px) {
     .services__wapper_list li .icon {
@@ -1209,6 +1231,10 @@ p {
 }
 
 .services__wapper_list li:hover .icon .black {
+    display: none;
+}
+
+.services__wapper_list li:hover .icon .white {
     display: block
 }
 
@@ -2491,7 +2517,8 @@ p {
 
 .footer__logo h5 {
     font-size: 34px;
-    font-weight: 600
+    font-weight: 600;
+    color:#1a1a1a;
 }
 
 .footer__socal {
