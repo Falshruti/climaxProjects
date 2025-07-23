@@ -60,7 +60,6 @@ p {
 	height: 50px;
 	line-height: 47px;
 	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	position: fixed;
 	right: 5px;
 	text-align: center;
@@ -179,7 +178,7 @@ p {
 
 .title {
     color: var(--grayWhite-clr);
-    font-size: 54px;
+    font-size: 46px;
     font-weight: 500;
     line-height: 62px;
     word-wrap: break-word
@@ -211,8 +210,8 @@ p {
 }
 
 .circle {
-    width: 182px;
-    height: 182px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 1px solid var(--btn-clr);
     transition: all .5s;
@@ -1002,7 +1001,7 @@ p {
 
 .about__wapper_left .circle {
     margin: auto;
-    margin-top: 70px
+    margin-top: 50px
 }
 
 @media(max-width: 1200px) {
@@ -1075,7 +1074,7 @@ p {
 }
 
 .about__2_title {
-    color: var(--secondary-clr)
+    color: var(--secondary-clr);
 }
 
 .about__2_circle {
@@ -1256,7 +1255,9 @@ p {
 }
 
 .services .service__card:hover {
-    background-color: var(--btn-clr)
+    background-color: #e6f7f5;
+    cursor: pointer;
+    border: 1px solid #ffffff;
 }
 
 .services .service__card:hover p {
@@ -1397,7 +1398,10 @@ p {
 }
 
 .services__2 {
-    padding-bottom: 130px
+    padding-bottom: 400px
+}
+.services__2 .common__btn{
+    color: #000;
 }
 
 @media(max-width: 991px) {
@@ -1434,7 +1438,7 @@ p {
 }
 
 .services__2_wapper .services__2_card {
-    background-color: #588983
+    background-color: #fffefe;
 }
 
 .services__2_wapper .services__2_card h3 {
@@ -1522,7 +1526,7 @@ p {
 }
 
 .projects {
-    padding-top: 284px
+    padding-top: 150px
 }
 
 @media(max-width: 991px) {
@@ -1551,7 +1555,8 @@ p {
     display: grid;
     grid-template-columns: 536px auto;
     gap: 136px;
-    margin-top: 60px
+    margin-top: 50px;
+    margin-bottom: 50px
 }
 
 @media(max-width: 1400px) {
@@ -1846,7 +1851,7 @@ p {
 
 .projects__3 {
     padding-top: 0px;
-    padding-bottom: 0
+    padding-bottom: 50px;
 }
 
 .projects__3_card .prj__title {
@@ -2597,13 +2602,13 @@ p {
 }
 
 .page__header {
-    background-color: #1f4038;
-    padding: 148px 0
+    background-color: #9fdcf8;
+    padding: 70px 0
 }
 
 @media(max-width: 1200px) {
     .page__header {
-        padding: 120px 0
+        padding: 50px 0
     }
 }
 
@@ -2635,7 +2640,7 @@ p {
 
 .page__header h2 {
     color: var(--grayWhite-clr);
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 500;
     line-height: 62px;
     margin-bottom: 33px
