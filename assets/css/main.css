@@ -1259,8 +1259,55 @@ p {
     padding: 40px;
     background-color: #fff;
     border-radius: 10px;
-    transition: all .5s
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease;
 }
+
+.service__card:hover { transform: translateY(-4px); }
+
+.service__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;             /* border thickness (change as you like) */
+  border-radius: inherit;
+
+  --start: -135deg;
+  --p: 0turn;               /* progress of the sweep (0 -> 1turn) */
+
+  /* Only show the border ring (mask out the middle) */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  /* The sweep: fills color from 0 to var(--p), transparent after */
+  background:
+    conic-gradient(from var(--start),
+      #1261ac 0turn,      /* start color */
+      #7ec0fe var(--p),   /* optional two-tone as it draws */
+      transparent var(--p) 1turn
+    );
+
+  pointer-events: none;
+}
+
+/* 4) On hover, animate the sweep around the card */
+.service__card:hover::before {
+  animation: draw-border 1.1s linear forwards;
+}
+
+@property --p {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0turn;
+}
+
+@keyframes draw-border {
+  to { --p: 1turn; }
+}
+
 
 @media(max-width: 768px) {
     .services .service__card {
@@ -1268,11 +1315,11 @@ p {
     }
 }
 
-.services .service__card:hover {
+/* .services .service__card:hover {
     background-color: #e6f7f5;
     cursor: pointer;
     border: 1px solid #ffffff;
-}
+} */
 
 .services .service__card:hover p {
     color: var(--secondary-clr)
@@ -1323,7 +1370,9 @@ p {
 .services .service__card a {
     transition: all .5s;
     color: var(--main-clr);
-    font-weight: 600
+    font-weight: 600;
+    position: absolute;
+    bottom: 40px;
 }
 
 .services .service__card .black {
