@@ -1060,7 +1060,11 @@ p {
 .about__wapper_right li:last-child {
     margin-bottom: 0
 }
-
+.aboutUs{
+	background-image: url("assets/img/about/1.jpg");
+ 	background-repeat: no-repeat;
+   background-position: center center;
+}
 @media(max-width: 1200px) {
     .about__wapper_right li {
         margin-bottom: 40px
@@ -3488,3 +3492,4 @@ p {
     padding: 0;
     margin-top: 130px
 }
+
