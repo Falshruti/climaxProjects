@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lora:wght@400;500;600;700&display=swap');
 :root {
-    --body-clr: #e3ece7;
+    --body-clr: #f9f9f9;
     --main-clr: #1261ac;
     --btn-clr: #0c0a20;
     --primary-clr: #ffffff;
@@ -8,7 +8,7 @@
     --grayBlack-clr: #040e17;
     --gry-clr: #6e6f75;
     --grayWhite-clr: #1a1a1a;
-    --pra-clr:#6e6f75;
+    --pra-clr:#1a1a1b;
 }
 
 body {
@@ -45,7 +45,8 @@ a {
 p {
     color: var(--pra-clr);
     line-height: 26px;
-    margin-bottom: 0
+    margin-bottom: 0;
+    text-align: justify;
 }
 /*START SCROLL TO TOP*/
 .topcontrol {
@@ -135,7 +136,7 @@ p {
 }
 
 .py__130 {
-    padding: 130px 0
+    padding: 75px 0
 }
 
 @media(max-width: 991px) {
@@ -178,7 +179,7 @@ p {
 
 .title {
     color: var(--grayWhite-clr);
-    font-size: 41px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 50px;
     word-wrap: break-word;
@@ -211,8 +212,8 @@ p {
 }
 
 .circle {
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     border: 1px solid var(--btn-clr);
     transition: all .5s;
@@ -222,6 +223,9 @@ p {
     font-weight: 600;
     flex-direction: column;
     color: var(--btn-clr)
+}
+.circle span{
+    text-align: center;
 }
 
 @media(max-width: 991px) {
@@ -358,7 +362,7 @@ p {
     background-color: #1261ac;
     border-radius: 10px;
     padding: 90px;
-    margin-top: 106px;
+    margin-top: 60px;
     overflow-x: hidden
 }
 
@@ -606,8 +610,8 @@ p {
 
 .banner {
     background-color: #0f1b19;
-    padding-top: 107px;
-    padding-bottom: 108px
+    padding-top: 100px;
+    padding-bottom: 90px
 }
 
 .banner__content {
@@ -617,7 +621,7 @@ p {
 
 .banner__content_title h1 {
     color: var(--primary-clr);
-    font-size: 85px;
+    font-size: 67px;
     line-height: 100px;
     font-weight: 600
 }
@@ -645,10 +649,10 @@ p {
 
 .banner__content_title p {
     max-width: 700px;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 32px;
-    color: rgba(227, 236, 231, .67);
-    margin-top: 73px
+    color: rgba(255, 245, 245, 0.67);
+    margin-top: 52px
 }
 
 @media(max-width: 1200px) {
@@ -783,7 +787,7 @@ p {
 .banner__right .bg__img {
     position: absolute;
     right: 0;
-    bottom: -50px;
+    top: 40px;
     border-radius: 10px;
     border-top-left-radius: 150px;
     z-index: 1
@@ -963,7 +967,14 @@ p {
 }
 
 .about__title .title {
-    max-width: 900px
+    max-width: 1050px
+}
+
+#about{
+    background-image: url('../img/home-about-bg.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
 }
 
 .about__title_shap img {
@@ -973,7 +984,20 @@ p {
 }
 
 .about__wapper {
-    margin-top: 60px
+    margin-top: 30px;
+}
+.about__wapper ul li{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    flex: 1 1 calc(40% - 20px); 
+    display: flex; 
+    align-items: center; 
+    gap: 7px;
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .mission{
     border-radius: 10px;
@@ -1014,7 +1038,7 @@ p {
 
 .about__wapper_left .circle {
     margin: auto;
-    margin-top: 50px
+    margin-top: 23px
 }
 
 @media(max-width: 1200px) {
@@ -1029,10 +1053,6 @@ p {
     }
 }
 
-.about__wapper_center {
-    padding-right: 32px
-}
-
 @media(max-width: 991px) {
     .about__wapper_center {
         padding-right: 0px
@@ -1041,7 +1061,7 @@ p {
 
 .about__wapper_center img {
     border-radius: 10px;
-    width: 100%
+    width: 75%
 }
 
 @media(max-width: 991px) {
@@ -1050,26 +1070,10 @@ p {
     }
 }
 
-.about__wapper_right li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 45px
-}
-
 .about__wapper_right li:last-child {
     margin-bottom: 0
 }
-.aboutUs{
-	background-image: url("../img/about/2.jpg") !important;
- 	background-repeat: no-repeat;
-   background-position: center center;
-	width:100%;
-	height:350px;
-	background-size: cover; /* Cover full area */
-  margin: 0;             /* Remove extra gaps */
-  padding: 0;
-}
+
 @media(max-width: 1200px) {
     .about__wapper_right li {
         margin-bottom: 40px
@@ -1145,8 +1149,26 @@ p {
     padding-bottom: 70px;
 }
 
+.sevices-shape4{
+    position: absolute;
+    top: -20%;
+    right: -3%;
+    -webkit-animation: rotated 8s infinite linear;
+    animation: rotated 8s infinite linear;
+}
+@keyframes rotated
+{
+    0% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+}
+100% {
+    -webkit-transform: rotateZ(-360deg);
+    transform: rotateZ(-360deg);
+}
+}
 .services__title .title {
-    max-width: 700px
+    max-width: 790px
 }
 
 .services__title .common__btn {
@@ -1154,8 +1176,8 @@ p {
     color: var(--secondary-clr)
 }
 
-.services__wapper_list {
-    margin-top: 36px
+.services__wapper{
+    padding: 0 50px;
 }
 
 .services__wapper_list li {
@@ -1163,9 +1185,9 @@ p {
     align-items: center;
     justify-content: space-between;
     color: var(--grayWhite-clr);
-    padding: 54px 0;
+    padding: 30px 0;
     border-bottom: 1px solid rgba(227, 236, 231, .1215686275);
-    gap: 30px
+    gap: 20px
 }
 
 .services__wapper_list li:last-child {
@@ -1186,20 +1208,19 @@ p {
 .services__wapper_list li .service__name {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     max-width: 515px;
     width: 100%;
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 600;
     transition: all .5s ease-in-out;
     color:var(--secondary-clr);
-    line-height: 46px;
+    line-height: 35px;
 }
 
-.services__wapper_list li .service__name sup {
+.services__wapper_list li .service__name span {
     font-size: 16px;
     font-weight: 600;
-    margin-top: -10px;
     display: block;
     color: var(--btn-clr)
 }
@@ -1597,10 +1618,6 @@ p {
     padding-bottom: 130px
 }
 
-.projects {
-    padding-top: 150px
-}
-
 @media(max-width: 991px) {
     .projects {
         padding-top: 220px
@@ -1696,6 +1713,10 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 10px
+}
+
+.video_home{
+    padding-bottom: 152px;
 }
 
 .projects__wapper_card .prj__title {
@@ -3497,9 +3518,3 @@ p {
     padding: 0;
     margin-top: 130px
 }
-
-
-
-
-
-
