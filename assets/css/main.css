@@ -100,7 +100,7 @@ p {
 
 @media(max-width: 768px) {
     .t__54 {
-        font-size: 35px;
+        font-size: 25px;
         line-height: 37px
     }
 }
@@ -1286,13 +1286,20 @@ p {
 }
 
 .services .service__card {
-    padding: 40px;
     background-color: #fff;
     border-radius: 10px;
-    height: 450px;
+    height: auto;
     position: relative;
     overflow: hidden;
     transition: transform 0.25s ease;
+}
+
+#service__cardleft {
+    padding: 0px 40px 0px 0px;
+}
+
+#service__cardright{
+    padding: 0px 0px 0px 40px;
 }
 
 .service__card:hover { transform: translateY(-4px); }
@@ -1386,7 +1393,7 @@ p {
 .services .service__card p {
     transition: all .5s;
     color: #6e6f75;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 46px
 }
 
@@ -1402,7 +1409,7 @@ p {
     color: var(--main-clr);
     font-weight: 600;
     position: absolute;
-    bottom: 40px;
+    bottom: 25px;
 }
 
 .services .service__card .black {
@@ -1587,6 +1594,34 @@ p {
     }
 }
 
+.two-col {
+  display: flex;
+  /* align-items: center; */
+  gap: 30px; /* space between image and content */
+}
+
+.service__image img {
+  max-width: 100%; /* adjust image size */
+  height: auto;
+}
+
+.service__details {
+  flex: 1; /* content takes remaining width */
+}
+
+@media (max-width: 768px) {
+  .two-col {
+    flex-direction: column; /* stack in mobile */
+    text-align: center;
+  }
+
+  .service__image img {
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+}
+
+
 .services__2_row {
     margin-top: 89px
 }
@@ -1614,8 +1649,8 @@ p {
 
 .all__services {
     background-color: rgba(0, 0, 0, 0);
-    margin-bottom: 181px;
-    padding-bottom: 130px
+    margin-bottom: 20px;
+    padding-bottom: 10px
 }
 
 @media(max-width: 991px) {
@@ -2789,7 +2824,7 @@ p {
 .service__details {
     max-width: 1096px;
     margin: auto;
-    margin-bottom: 181px
+    margin-bottom: 15px
 }
 
 .service__details .thumb__img {
