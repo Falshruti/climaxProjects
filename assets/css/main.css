@@ -967,7 +967,7 @@ p {
 }
 
 .about__title .title {
-    max-width: 1050px
+    max-width: 100%
 }
 
 #about{
@@ -999,6 +999,16 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 }
+.read-btn{
+    background-color: #1261ac;
+    color: white;
+}
+
+.read-btn:hover{
+    background-color: #0c0a20;
+    color: white;
+}
+
 .mission{
     border-radius: 10px;
     border: 1px solid #c0c0c0;
