@@ -3267,7 +3267,7 @@ p {
 .contact {
     max-width: 1096px;
     margin: auto;
-    padding-top: 166px
+    padding-top: 10px
 }
 
 .contact .location .location__disc {
@@ -3444,6 +3444,7 @@ p {
     color: var(--secondary-clr);
     border: unset;
     font-size: 28px;
+    font-family: Kanit;
     font-weight: 500;
     line-height: 38px;
     padding: 0;
@@ -3581,7 +3582,7 @@ p {
   padding: 50px 0px 50px 20px;
   display: flex;
   flex-direction: column;
- justify-content: flex-start;
+  justify-content: flex-start;
   position: relative;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -3699,3 +3700,70 @@ p {
   }
 }
 
+.job-card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      padding: 30px;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .job-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .job-card h4 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f3d68;
+    }
+
+    .job-card p {
+      color: #555;
+      font-size: 15px;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .job-card .badge {
+      background: #1261AC;
+      color: #fff;
+      font-size: 13px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .job-card .apply-btn {
+      background: #1261AC;
+      color: #fff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 30px;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .job-card .apply-btn:hover {
+      background: #0b4c84;
+      transform: scale(1.05);
+    }
+
+    .career-intro {
+      text-align: center;
+      color: #555;
+      font-size: 20px;
+    }
+
+    .career-intro span {
+      color: #1261AC;
+      font-weight: 600;
+    }
+    .career-intro p{
+        text-align: center;
+    }
