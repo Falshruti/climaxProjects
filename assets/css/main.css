@@ -1660,7 +1660,8 @@ p {
 .all__services {
     background-color: rgba(0, 0, 0, 0);
     margin-bottom: 20px;
-    padding-bottom: 10px
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 @media(max-width: 991px) {
@@ -2697,7 +2698,7 @@ p {
 }
 
 .footer__info {
-    padding-top: 40px
+    padding-top: 20px
 }
 
 .footer__info_group {
@@ -2741,7 +2742,7 @@ p {
 }
 
 .footer__copyright p {
-    padding: 25px 0
+    padding: 2px 0
 }
 
 .footer__copyright p a {
@@ -3562,4 +3563,139 @@ p {
 .pricing .partner {
     padding: 0;
     margin-top: 130px
+}
+
+
+/* ---------- PRINT MEDIA SIDEBAR ---------- */
+.printmedia__section {
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.printmedia__sidebar {
+  background: #00afef;
+  color: #0c0a20;
+  width: 25%;
+  min-width: 260px;
+  padding: 50px 0px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.printmedia__sidebar .menu-item {
+  position: relative;
+  text-align: center;
+  padding: 18px 24px;
+  margin: 10px 0;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.printmedia__sidebar .menu-item .arrow {
+  opacity: 0;
+  margin-left: 10px;
+  transition: 0.3s ease;
+  color: #1261ac;
+  font-size: 1.2rem;
+}
+
+.printmedia__sidebar .menu-item.active {
+  background: #1261ac;
+  color: #f9f9f9;
+}
+
+/* Arrow image for active item */
+.printmedia__sidebar .menu-item.active::after {
+  content: "";
+  background-image: url("../img/services/arrow-12.png"); /* replace with your image path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  animation: arrowSlide 1s infinite;
+}
+
+@keyframes arrowSlide {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-50%) translateX(5px);
+  }
+}
+
+/* Content */
+.printmedia__content {
+  width: 70%;
+  padding: 50px 50px;
+  background: #fff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.printmedia__content .content-item {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.printmedia__content .content-item.active {
+  display: block;
+}
+
+.printmedia__content img{
+    width: 100%;
+    height: 350px;
+    margin: 40px 0px 10px 0px;
+}
+
+.printmedia__content p{
+    font-size: 19px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .printmedia__section {
+    flex-direction: column;
+  }
+  .printmedia__sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding: 20px 10px;
+  }
+  .printmedia__sidebar .menu-item {
+    margin: 5px;
+    flex-shrink: 0;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+  .printmedia__content {
+    width: 100%;
+    padding: 40px 25px;
+  }
 }
