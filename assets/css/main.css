@@ -786,8 +786,8 @@ p {
 
 .banner__right .bg__img {
     position: absolute;
-    right: 0;
-    top: 40px;
+    right: -88px;
+    top: 10px;
     border-radius: 10px;
     border-top-left-radius: 150px;
     z-index: 1
@@ -3767,3 +3767,4 @@ p {
     .career-intro p{
         text-align: center;
     }
+
