@@ -970,12 +970,6 @@ p {
     max-width: 100%
 }
 
-#about{
-    background-image: url('../img/home-about-bg.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: center;
-}
 
 .about__title_shap img {
     width: 100%;
@@ -3767,4 +3761,5 @@ p {
     .career-intro p{
         text-align: center;
     }
+
 
