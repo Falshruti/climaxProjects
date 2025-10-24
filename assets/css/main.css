@@ -212,8 +212,7 @@ p {
 }
 
 .circle {
-    width: 110px;
-    height: 110px;
+   
     border-radius: 50%;
     border: 1px solid var(--btn-clr);
     transition: all .5s;
@@ -3761,5 +3760,6 @@ p {
     .career-intro p{
         text-align: center;
     }
+
 
 
