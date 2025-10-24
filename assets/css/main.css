@@ -212,15 +212,17 @@ p {
 }
 
 .circle {
-    border-radius: 10%;
-    border: 1px solid var(--btn-clr);
-    transition: all .5s;
-    display: flex;
+    outline: none;
+    display: inline-flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    border-radius: 10px;
     font-weight: 600;
-    flex-direction: column;
-    color: var(--btn-clr)
+    padding: 12px 18px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--btn-clr);
+    color: var(--primary-clr);
+    transition: all .5s;
 }
 .circle span{
     text-align: center;
@@ -3759,6 +3761,7 @@ p {
     .career-intro p{
         text-align: center;
     }
+
 
 
 
