@@ -221,7 +221,7 @@ p {
     padding: 12px 18px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid var(--btn-clr);
-    color: var(--primary-clr);
+    color: #0c0a20;
     transition: all .5s;
 }
 .circle span{
@@ -3761,6 +3761,7 @@ p {
     .career-intro p{
         text-align: center;
     }
+
 
 
 
