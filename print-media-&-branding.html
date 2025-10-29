@@ -137,87 +137,109 @@
     </section>
     <!-- --------------- End page header ----------- -->
 
-    <section class="services all__services py__130">
-      <div class="container">
-        <div class="printmedia__section d-flex flex-wrap">
-          <!-- Sidebar -->
-          <div class="printmedia__sidebar">
-            <div class="menu-item active" data-target="hoardings">
-              Hoardings <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="newspaper">
-              Newspaper Advertising <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="printads">
-              Print Advertisements <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="brochures">
-              Brochures & Leaflets <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="catalogues">
-              Product Catalogues <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="packaging">
-              Packaging Design <span class="arrow">➤</span>
-            </div>
-          </div>
+   <section class="services all__services py__130">
+      <div class="container d-flex justify-content-center">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-8">
+            <div class="accordion" id="servicesAccordion">
 
-          <!-- Content -->
-          <div class="printmedia__content">
-            <div class="content-item active" id="hoardings">
-              <h2>Hoardings</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Your brand’s message, impossible to miss. Hoardings offer 24/7 visibility in high-traffic spots,
-                making sure your brand gets seen, remembered, and talked about.
-              </p>
-            </div>
+              <!-- Service 1 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa-solid fa-comments me-2"></i> <b>Hoardings</b>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#servicesAccordion">
+                  <div class="accordion-body">
+                    Your brand’s message, impossible to miss. Hoardings offer 24/7 visibility in high-traffic spots, making sure your brand gets seen, remembered, and talked about.
+                  </div>
+                </div>
+              </div>
 
-            <div class="content-item" id="newspaper">
-              <h2>Newspaper Advertising</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Still one of the most trusted ways to reach people where they start their day. Newspaper ads give your
-                brand credibility, local reach, and visibility you can count on. Ideal for announcements, offers, and
-                awareness campaigns.
-              </p>
-            </div>
+              <!-- Service 2 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fa-solid fa-bullseye me-2"></i> <b>Newspaper Advertising</b>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#servicesAccordion">
+                  <div class="accordion-body">
+                   Still one of the most trusted ways to reach people where they start their day. Newspaper ads give your brand credibility, local reach, and visibility you can count on. Ideal for announcements, offers, and awareness campaigns.
+                  </div>
+                </div>
+              </div>
 
-            <div class="content-item" id="printads">
-              <h2>Print Advertisements</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                When you need trusted, credible reach — print ads work. They help your brand land directly in the hands
-                of your audience through newspapers and magazines they already follow.
-              </p>
-            </div>
+              <!-- Service 3 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fa-solid fa-palette me-2"></i> <b>Print Advertisements</b>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#servicesAccordion">
+                  <div class="accordion-body">
+                   When you need trusted, credible reach — print ads work. They help your brand land directly in the hands of your audience through newspapers and magazines they already follow.
+                  </div>
+                </div>
+              </div>
 
-            <div class="content-item" id="brochures">
-              <h2>Brochures & Leaflets</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                The easiest way to tell your brand’s story, in hand and on the move. These give potential customers
-                everything they need to know — benefits, offers, and why they should choose you.
-              </p>
-            </div>
+              <!-- Service 4 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fa-solid fa-user-group me-2"></i> <b>Brochures & Leaflets</b>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#servicesAccordion">
+                  <div class="accordion-body">
+                   The easiest way to tell your brand’s story, in hand and on the move. These give potential customers everything they need to know — benefits, offers, and why they should choose you.
+                  </div>
+                </div>
+              </div>
 
-            <div class="content-item" id="catalogues">
-              <h2>Product Catalogues</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                A smart, organised showcase of your products that helps customers decide faster and better. Catalogues
-                build brand trust, improve buying confidence, and ensure your entire range gets noticed — exactly how
-                you want it.
-              </p>
-            </div>
+              <!-- Service 5 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i> <b>Product Catalogues</b>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#servicesAccordion">
+                  <div class="accordion-body">
+                   A smart, organised showcase of your products that helps customers decide faster and better. Catalogues build brand trust, improve buying confidence, and ensure your entire range gets noticed — exactly how you want it.
+                  </div>
+                </div>
+              </div>
 
-            <div class="content-item" id="packaging">
-              <h2>Packaging Design</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Your packaging isn’t just a wrapper — it’s a silent salesperson. Great packaging grabs attention, builds
-                curiosity, and makes your product stand out on any shelf.
-              </p>
+              <!-- Service 6 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <i class="fa-solid fa-laptop-code me-2"></i> <b>Packaging Design</b>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#servicesAccordion">
+                  <div class="accordion-body">
+                    Your packaging isn’t just a wrapper — it’s a silent salesperson. Great packaging grabs attention, builds curiosity, and makes your product stand out on any shelf.
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
