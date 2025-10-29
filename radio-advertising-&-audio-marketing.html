@@ -137,37 +137,47 @@
     </section>
     <!-- --------------- End page header ----------- -->
 
-    <section class="services all__services py__130">
-      <div class="container">
-        <div class="printmedia__section d-flex flex-wrap">
-          <!-- Sidebar -->
-          <div class="printmedia__sidebar">
-            <div class="menu-item active" data-target="hoardings">
-              Radio Jingles <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="newspaper">
-              Radio Spot Ads <span class="arrow">➤</span>
-            </div>
-          </div>
+   <section class="services all__services py__130">
+      <div class="container d-flex justify-content-center">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-8">
+            <div class="accordion" id="servicesAccordion">
 
-          <!-- Content -->
-          <div class="printmedia__content">
-            <div class="content-item active" id="hoardings">
-              <h2>Radio Jingles</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Catchy, memorable, and impossible to forget. A good jingle makes your brand stick in people’s heads long after the ad’s over. It builds instant recall and travels with your audience — in their cars, homes, and workplaces.
-              </p>
-            </div>
+              <!-- Service 1 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa-solid fa-comments me-2"></i> <b>Radio Jingles</b>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#servicesAccordion">
+                  <div class="accordion-body">
+                  Catchy, memorable, and impossible to forget. A good jingle makes your brand stick in people’s heads long after the ad’s over. It builds instant recall and travels with your audience — in their cars, homes, and workplaces.
+                  </div>
+                </div>
+              </div>
 
-            <div class="content-item" id="newspaper">
-              <h2>Radio Spot Ads</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Perfect for reaching people on the move. Well-timed, well-written radio ads help you connect with your target audience during peak listening hours.
-              </p>
-            </div>
+              <!-- Service 2 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fa-solid fa-bullseye me-2"></i> <b>Radio Spot Ads</b>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#servicesAccordion">
+                  <div class="accordion-body">
+                   Perfect for reaching people on the move. Well-timed, well-written radio ads help you connect with your target audience during peak listening hours.
+                  </div>
+                </div>
+              </div>
 
+            
+
+            </div>
           </div>
         </div>
       </div>
