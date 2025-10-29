@@ -137,96 +137,130 @@
     </section>
     <!-- --------------- End page header ----------- -->
 
-    <section class="services all__services py__130">
-      <div class="container">
-        <div class="printmedia__section d-flex flex-wrap">
-          <!-- Sidebar -->
-          <div class="printmedia__sidebar">
-            <div class="menu-item active" data-target="hoardings">
-              Social Media Management <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="newspaper">
-              Paid Advertising (Meta & Google Ads) <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="printads">
-              Content Creation & Campaign Design <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="brochures">
-              Influencer & Collaboration Campaigns <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="catalogues">
-              Search Engine Optimization (SEO) <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="packaging">
-             Website Design & Development <span class="arrow">➤</span>
-            </div>
-            <div class="menu-item" data-target="email">
-             Email & WhatsApp Marketing <span class="arrow">➤</span>
-            </div>
-          </div>
+   <section class="services all__services py__130">
+  <div class="container d-flex justify-content-center">
+    <div class="row justify-content-center w-100">
+      <div class="col-md-8 col-lg-8">
+        <div class="accordion" id="servicesAccordion">
 
-          <!-- Content -->
-          <div class="printmedia__content">
-            <div class="content-item active" id="hoardings">
-              <h2>Social Media Management</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
+          <!-- Service 1 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <i class="fa-solid fa-comments me-2"></i> <b>Social Media Management</b>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
                 We don’t just post pretty pictures — we build conversations. From daily posts to DM replies, we keep your brand alive and kicking in your audience’s feed. More buzz, more love, more followers who actually care.
-              </p>
+              </div>
             </div>
-
-            <div class="content-item" id="newspaper">
-              <h2>Paid Advertising (Meta & Google Ads)</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Your ads should work harder than your budget. We plan sharp, targeted campaigns that reach the right people, drive real actions, and show you results worth watching.
-              </p>
-            </div>
-
-            <div class="content-item" id="printads">
-              <h2>Content Creation & Campaign Design</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Nobody remembers boring content. We craft reels, posts, and campaigns that stop the scroll, spark reactions, and stay on your audience’s mind long after they’ve double tapped.
-              </p>
-            </div>
-
-            <div class="content-item" id="brochures">
-              <h2>Influencer & Collaboration Campaigns</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                People trust people. We find creators who vibe with your brand, plan campaigns that feel authentic, and turn followers into believers.
-              </p>
-            </div>
-
-            <div class="content-item" id="catalogues">
-              <h2>Search Engine Optimization (SEO)</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                When people Google your service, you should be on top — not buried on page three. We tweak, fix, and optimise your site so your brand ranks higher, gets seen more, and earns organic traffic on autopilot.
-              </p>
-            </div>
-
-            <div class="content-item" id="packaging">
-              <h2>Website Design & Development</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Your website isn’t just a formality — it’s your digital face. We build sleek, mobile-friendly, lead-generating websites that look great, work fast, and convert visitors into customers.
-              </p>
-            </div>
-
-            <div class="content-item" id="email">
-              <h2>Email & WhatsApp Marketing</h2>
-              <img src="assets/img/services/front-view.jpg">
-              <p>
-                Reach your customers where they actually look. Smart, sharp, no-spam communication that keeps your brand on their mind and their screens.
-              </p>
-            </div>
-
           </div>
+
+          <!-- Service 2 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fa-solid fa-bullseye me-2"></i> <b>Paid Advertising (Meta & Google Ads)</b>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                Your ads should work harder than your budget. We plan sharp, targeted campaigns that reach the right people, drive real actions, and show you results worth watching.
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-palette me-2"></i> <b>Content Creation & Campaign Design</b>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                Nobody remembers boring content. We craft reels, posts, and campaigns that stop the scroll, spark reactions, and stay on your audience’s mind long after they’ve double tapped.
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="fa-solid fa-user-group me-2"></i> <b>Influencer & Collaboration Campaigns</b>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                People trust people. We find creators who vibe with your brand, plan campaigns that feel authentic, and turn followers into believers.
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="fa-solid fa-magnifying-glass me-2"></i> <b>Search Engine Optimization (SEO)</b>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                When people Google your service, you should be on top — not buried on page three. We tweak, fix, and optimise your site so your brand ranks higher, gets seen more, and earns organic traffic on autopilot.
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <i class="fa-solid fa-laptop-code me-2"></i> <b>Website Design & Development</b>
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+              data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                Your website isn’t just a formality — it’s your digital face. We build sleek, mobile-friendly, lead-generating websites that look great, work fast, and convert visitors into customers.
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <i class="fa-solid fa-envelope-open-text me-2"></i> <b>Email & WhatsApp Marketing</b>
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+              data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                Reach your customers where they actually look. Smart, sharp, no-spam communication that keeps your brand on their mind and their screens.
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -349,42 +383,7 @@
     <!-- Link custom Js -->
     <script src="assets/js/main.js"></script>
 
-    <script>
-      const menuItems = document.querySelectorAll('.menu-item');
-      const contentItems = document.querySelectorAll('.content-item');
-      let activeIndex = 0;
-      let autoScrollInterval;
-
-      function activateItem(index) {
-        menuItems.forEach(i => i.classList.remove('active'));
-        contentItems.forEach(c => c.classList.remove('active'));
-
-        menuItems[index].classList.add('active');
-        contentItems[index].classList.add('active');
-      }
-
-      // Manual click event
-      menuItems.forEach((item, index) => {
-        item.addEventListener('click', () => {
-          clearInterval(autoScrollInterval);
-          activeIndex = index;
-          activateItem(activeIndex);
-          startAutoScroll();
-        });
-      });
-
-      // Auto-scroll function
-      function startAutoScroll() {
-        autoScrollInterval = setInterval(() => {
-          activeIndex = (activeIndex + 1) % menuItems.length;
-          activateItem(activeIndex);
-        }, 4000); // every 4 seconds
-      }
-
-      // Start scrolling
-      startAutoScroll();
-    </script>
-
+   
 
   </body>
 
