@@ -1243,7 +1243,9 @@ p {
 
 .services__wapper_list li .describe {
     max-width: 501px;
-    color: var(--grayWhite-clr)
+    color: var(--grayWhite-clr);
+    flex: 2;
+    margin: 0;
 }
 
 .services__wapper_list li .icon {
@@ -3761,6 +3763,92 @@ p {
     .career-intro p{
         text-align: center;
     }
+
+/* === PRELOADER BASE === */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #ffffff; /* or brand color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+  overflow: hidden;
+}
+
+/* === GOAL CIRCLE === */
+.goal-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.goal-circle {
+  width: 100%;
+  height: 100%;
+  /*border: 2px dotted #0073e6;*/
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  animation: rotateCircle 2s linear infinite;
+}
+
+/* === PLANE === */
+.plane-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  animation: rotatePlane 2s linear forwards;
+}
+
+.plane {
+  position: absolute;
+  top: -75px; /* half of circle radius */
+  left: -15px;
+  width: 50px;
+  transform: rotate(0deg);
+}
+
+/* === CIRCLE ROTATION (for dotted effect) === */
+@keyframes rotateCircle {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* === PLANE PATH === */
+@keyframes rotatePlane {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* === FLY AWAY === */
+@keyframes flyAway {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(150px, -250px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* === HIDE PRELOADER === */
+body.loaded #preloader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
 
 
 
