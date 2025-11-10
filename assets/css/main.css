@@ -1064,8 +1064,7 @@ p {
 }
 
 .about__wapper_center img {
-    border-radius: 10px;
-    width: 75%
+    width: 100%
 }
 
 @media(max-width: 991px) {
@@ -3857,5 +3856,3 @@ body.loaded #preloader {
 #servicesAccordion .accordion-item h2{
     color: #1261ac;
 }
-
-
