@@ -1608,7 +1608,7 @@ p {
 
 .service__image img {
   max-width: 100%; /* adjust image size */
-  height: auto;
+  height: 217px;
 }
 
 .service__details {
@@ -2746,10 +2746,6 @@ p {
     font-weight: 600
 }
 
-.page__header {
-    background-color: #9fdcf8;
-    padding: 70px 0
-}
 
 @media(max-width: 1200px) {
     .page__header {
@@ -3861,3 +3857,5 @@ body.loaded #preloader {
 #servicesAccordion .accordion-item h2{
     color: #1261ac;
 }
+
+
