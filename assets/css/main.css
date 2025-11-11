@@ -1258,10 +1258,26 @@ p {
     transition: all .5s ease-in-out
 }
 
+.services__wapper_list li .icon1 {
+     width: 66px;
+    border-radius: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    transition: all .5s ease-in-out
+}
+
+.services__wapper_list li .icon1 img{
+    width: 100%;
+}
+
 .services__wapper_list li .icon .white {
     display: none
 }
 
+.services__wapper_list li .icon1 .whites {
+    display: none
+}
 
 @media(max-width: 991px) {
     .services__wapper_list li .icon {
@@ -1278,11 +1294,23 @@ p {
     background-color: var(--btn-clr)
 }
 
+.services__wapper_list li:hover .icon1 {
+    background-color: none;
+}
+
 .services__wapper_list li:hover .icon .black {
     display: none;
 }
 
+.services__wapper_list li:hover .icon1 .blacks {
+    display: none;
+}
+
 .services__wapper_list li:hover .icon .white {
+    display: block
+}
+
+.services__wapper_list li:hover .icon1 .whites {
     display: block
 }
 
