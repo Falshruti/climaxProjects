@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climax</title>
-    <!-- Link Bootstrap Icons  -->
-    <link rel="stylesheet" href="../../../../cdn.jsdelivr.net/npm/bootstrap-icons%401.11.1/font/bootstrap-icons.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+      <link rel="stylesheet" href="../../../../cdn.jsdelivr.net/npm/bootstrap-icons%401.11.1/font/bootstrap-icons.css" crossorigin="anonymous">
     <!--  Link slick slider  -->
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
@@ -20,22 +21,153 @@
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <!-- Link Custom css -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <!--font awesome-->
+      <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <style type="text/css">
-      /* Sticky Header */
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 9999;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    </style>
-  </head>
+    <style>
   
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        /* Stacking Cards Container */
+        .stacking-cards-container {
+            position: relative;
+            padding: 100px 0;
+        }
+
+        .service__card {
+            position: sticky;
+            top: 100px;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            /*height: 400px;*/
+        }
+
+        /* First card - stays at bottom initially, will be overlapped */
+        .service__card:nth-child(1) {
+            top: 100px;
+            z-index: 1;
+        }
+
+        /* Second card - overlaps first */
+        .service__card:nth-child(2) {
+            top: 100px;
+            z-index: 2;
+        }
+
+        /* Third card - overlaps second */
+        .service__card:nth-child(3) {
+            top: 100px;
+            z-index: 3;
+        }
+
+        /* Fourth card - overlaps third */
+        .service__card:nth-child(4) {
+            top: 100px;
+            z-index: 4;
+        }
+
+        .service__content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .service__image {
+            flex: 0 0 250px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .service__image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .service__card:hover .service__image img {
+            transform: scale(1.05);
+        }
+
+        .service__details {
+            flex: 1;
+        }
+
+        .service__details h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .service__details p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+        }
+
+        .up__icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service__content {
+                flex-direction: column;
+            }
+
+            .service__image {
+                flex: 0 0 200px;
+                width: 100%;
+            }
+
+            .service__card {
+                padding: 20px;
+                height: auto;
+            }
+
+            .service__card:nth-child(1),
+            .service__card:nth-child(2),
+            .service__card:nth-child(3),
+            .service__card:nth-child(4) {
+                top: 80px;
+            }
+        }
+
+       
+    </style>
+</head>
+<body>
   
   <body class="home1">
-    <!-- --------------- Start Header ------------ -->
+     <!-- --------------- Start Header ------------ -->
     <header class="header header__1">
     
       <!-- --- Bottom header Start -->
@@ -66,7 +198,7 @@
                   <div
                     class="d-flex justify-content-between align-items-center gap-1"
                   >
-                    <a href=""> Services </a>
+                    <a href="services.html"> Services </a>
                     <i class="bi bi-chevron-down"></i>
                   </div>
 
@@ -104,7 +236,7 @@
     </header>
     <!-- --------------- End Header ------------ -->
 
-      <!-- --------------- Start page header ----------- -->
+    <!-- --------------- Start page header ----------- -->
       <section class="page__header position-relative">
         <img
           src="assets/img/services/ServicesBanner.jpg"
@@ -121,146 +253,84 @@
           </div>
       </section>
     <!-- --------------- End page header ----------- -->
+    <section class="services">
+        <div class="container">
+            <div class="stacking-cards-container">
+                
+                <!-- Card 1 -->
+                <div class="service__card">
+                    <div class="service__content">
+                        <div class="service__image">
+                            <img src="assets/img/services/service 1.jpg">
+                        </div>
+                        <div class="service__details">
+                            <h3>Digital Marketing & Social Media</h3>
+                            <p>We plan and execute digital campaigns that drive engagement and deliver results. From scroll-stopping content to smart paid ads, SEO, and influencer collaborations, we help your brand show up where it matters, and mean something when it does. Every idea is insight-driven, performance-focused, and designed to build real digital presence.</p>
+                            <a href="digital-marketing.html" class="cta-btn">
+                                <span>View More Details</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <section class="services all__services py__130">
-      <div class="container">
-        <div class="row">
-          <div class="row mb-5"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-offset="0"
-              data-aos-duration="1000">
-            <div class="service__card" id="service__cardleft">
-              <div class="service__content two-col">
-                
-                <!-- Left Side Image -->
-                <div class="service__image col-md-3 col-xl-3">
-                  <img src="assets/img/services/service 1.jpg" alt="" />
+                <!-- Card 2 -->
+                <div class="service__card">
+                    <div class="service__content">
+                        <div class="service__image">
+                            <img src="assets/img/services/service 2.jpg" alt="Radio & Audio">
+                        </div>
+                        <div class="service__details">
+                            <h3>Radio, Audio & Media Strategy</h3>
+                            <p>Your brand’s voice deserves the right words and the right stage. We produce memorable jingles, sharp audio spots, and strategic media plans that ensure your message is heard at the right time, by the right people. With us, your brand doesn’t just speak, it stays in the listener’s mind.</p>
+                            <a href="radio-advertising-&-audio-marketing.html" class="cta-btn">
+                                <span>View More Details</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- Right Side Content -->
-                <div class="service__details col-md-9 col-xl-9">
-                  <h3 class="t__28">Digital Marketing & Social Media</h3>
-                  <p>
-                  
-                    We plan and execute digital campaigns that drive engagement and deliver results. From scroll-stopping content to smart paid ads, SEO, and influencer collaborations, we help your brand show up where it matters, and mean something when it does. Every idea is insight-driven, performance-focused, and designed to build real digital presence.
-                  </p>
-                  <a href="digital-marketing.html" class="cta-btn">
-                    <span>View More Details</span>
-                    <img src="assets/img/services/Frame_17.svg" alt="" class="up__icon" />
-                  </a>
+
+                <!-- Card 3 -->
+                <div class="service__card">
+                    <div class="service__content">
+                        <div class="service__image">
+                            <img src="assets/img/services/service 3.jpg">
+                        </div>
+                        <div class="service__details">
+                            <h3>Outdoor, Experiential & Audiovisual</h3>
+                            <p>We turn spaces and moments into powerful brand experiences. Whether it's a van campaign, event setup, or an AV that explains your product story, we build visibility that people not only notice, but remember. Every execution is designed to connect on the ground and leave a lasting impact.</p>
+                            <a href="outdoor-experiential-&-audiovisual-advertising.html" class="cta-btn">
+                                <span>View More Details</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-              </div>
+
+                <!-- Card 4 -->
+                <div class="service__card">
+                    <div class="service__content">
+                        <div class="service__image">
+                            <img src="assets/img/services/service 4.jpg" alt="Print Media">
+                        </div>
+                        <div class="service__details">
+                            <h3>Print Media & Branding</h3>
+                            <p>We create high-impact designs that make your brand unmissable in the physical world. Whether it’s a hoarding on a highway or a brochure in someone’s hand, every piece is crafted to leave a strong impression. From newspaper ads to packaging and catalogues, we bring consistency, clarity, and purpose to every printed touchpoint.</p>
+                            <a href="print-media-&-branding.html" class="cta-btn">
+                                <span>View More Details</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-
-          <div class="row mb-5"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-offset="0"
-              data-aos-duration="1000">
-            <div class="service__card" id="service__cardright">
-              <div class="service__content two-col">
-                
-                <!-- Right Side Content -->
-                <div class="service__details col-md-9 col-xl-9">
-                  <h3 class="t__28">Radio, Audio & Media Strategy</h3>
-                  <p>
-                    
-                    Your brand’s voice deserves the right words and the right stage. We produce memorable jingles, sharp audio spots, and strategic media plans that ensure your message is heard at the right time, by the right people. With us, your brand doesn’t just speak, it stays in the listener’s mind.
-                  </p>
-                  <a href="radio-advertising-&-audio-marketing.html" class="cta-btn">
-                    <span>View More Details</span>
-                    <img src="assets/img/services/Frame_17.svg" alt="" class="up__icon" />
-                  </a>
-                </div>
-
-                 <!-- Left Side Image -->
-                <div class="service__image col-md-3 col-xl-3">
-                  <img src="assets/img/services/service 2.jpg" alt="" />
-                </div> 
-                
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-5"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-offset="0"
-              data-aos-duration="1000">
-            <div class="service__card" id="service__cardleft">
-              <div class="service__content two-col">
-                
-                <!-- Left Side Image -->
-                <div class="service__image col-md-3 col-xl-3">
-                  <img src="assets/img/services/service 3.jpg" alt="" />
-                </div>
-                
-                <!-- Right Side Content -->
-                <div class="service__details col-md-9 col-xl-9">
-                  <h3 class="t__28">Outdoor, Experiential & Audiovisual</h3>
-                  <p>
-                    
-                    We turn spaces and moments into powerful brand experiences. Whether it's a van campaign, event setup, or an AV that explains your product story, we build visibility that people not only notice, but remember. Every execution is designed to connect on the ground and leave a lasting impact.
-                  </p>
-                  <a href="outdoor-experiential-&-audiovisual-advertising.html" class="cta-btn">
-                    <span>View More Details</span>
-                    <img src="assets/img/services/Frame_17.svg" alt="" class="up__icon" />
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="mb-5 row"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-offset="0"
-              data-aos-duration="1000">
-            <div class="service__card" id="service__cardright">
-              <div class="service__content two-col">
-                
-                <!-- Right Side Content -->
-                <div class="service__details col-md-9 col-xl-9">
-                  <h3 class="t__28">Print Media & Branding</h3>
-                  <p>
-                   
-                    We create high-impact designs that make your brand unmissable in the physical world. Whether it’s a hoarding on a highway or a brochure in someone’s hand, every piece is crafted to leave a strong impression. From newspaper ads to packaging and catalogues, we bring consistency, clarity, and purpose to every printed touchpoint.
-                  </p>
-                  <a href="print-media-&-branding.html" class="cta-btn">
-                    <span>View More Details</span>
-                    <img src="assets/img/services/Frame_17.svg" alt="" class="up__icon" />
-                  </a>
-                </div>
-
-                 <!-- Left Side Image -->
-                <div class="service__image col-md-3 col-xl-3">
-                  <img src="assets/img/services/service 4.jpg" alt="" />
-                </div>
-                
-                
-              </div>
-            </div>
-          </div>
-      
-          <div style="font-size: 20px; line-height: 1.6; position: relative;">
-           <!--  <p>
-              <img src="assets/img/services/contact_16334197.png" width="4%">Every channel <img src="assets/img/services/retro_13028345.png" width="4%">we use has a job to do, and we make sure it delivers.
-              <br>
-              <img src="assets/img/services/lightbulb.png" width="2%"> Because no matter the medium, the message <img src="assets/img/services/bundle_17770410.png" width="4%">should always be memorable.
-            </p> -->
-          </div>
-
         </div>
-
-      </div>
     </section>
+    
 
-<!-- --------------- start Footer ----------- -->
+   <!-- --------------- start Footer ----------- -->
     <footer class="footer">
       <div class="container">
         <hr class="footer__border" />
@@ -359,6 +429,7 @@
         </div>
         <!-- ---- Info -->
 
+
         <div class="row footer__copyright">
           <div class="col-12">
             <hr class="footer__border" />
@@ -369,28 +440,22 @@
         </div>
       </div>
     </footer>
-    <!--  End Footer -->
+    <!-- --------------- End Footer ----------- -->
 
-    <!--  Link jquery Js -->
+    <!-- --------- Link jquery Js -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
-
-    <!--  Link Bootstrap Js -->
+    <!-- --------- Link Bootstrap Js -->
     <script src="assets/bootstrap/bootstrap.min.js"></script>
 
-    <!--  Link slick slider Js -->
+    <!-- --------- Link slick slider Js -->
     <script src="assets/js/slick.min.js"></script>
 
-    <!--Link aos animation  -->
+    <!-- --------- Link aos animation Js -->
     <script src="assets/js/aos.js"></script>
 
-
-    <!-- Link magnific popup  -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <!-- scrolltopcontrol js -->
-  <script src="assets/js/scrolltopcontrol.js"></script> 
-
-    <!-- Link custom Js -->
+    <!-- --------- Link custom Js -->
     <script src="assets/js/main.js"></script>
   </body>
 
+<!-- Mirrored from rxdtheme.com/html/wrap/digiv/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jun 2025 06:53:18 GMT -->
 </html>
