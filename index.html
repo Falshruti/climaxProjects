@@ -30,9 +30,10 @@
     <div id="preloader">
       <div class="goal-container">
         <div class="goal-circle"></div>
-        <div class="plane-path">
-          <img src="assets/img/plane.png" alt="Loading" class="plane" />
-        </div>
+               <!-- Replace image with video -->
+          <video class="plane-video" autoplay muted playsinline>
+            <source src="assets/img/Plane_Animation's.mp4" type="video/mp4">
+          </video>
       </div>
     </div>
 
@@ -845,23 +846,16 @@
 
     <!-- Link custom Js -->
     <script src="assets/js/main.js"></script>
-    <script>
+   <script>
       window.addEventListener("load", function () {
-        const plane = document.querySelector(".plane");
 
-        // after 2s rotation, trigger fly-away animation
-        setTimeout(() => {
-          plane.style.animation = "flyAway 1.2s ease-in-out forwards";
-        }, 2000);
-
-        // remove preloader after full animation (2s + 1.2s)
+        // Hide preloader after 3 seconds (or when you want)
         setTimeout(() => {
           document.body.classList.add("loaded");
-        }, 3200);
+        }, 3000);
+
       });
     </script>
+
   </body>
 </html>
-
-
-
