@@ -3276,6 +3276,8 @@ body.loaded #preloader {
   visibility: hidden;
 }
 
+
+
 #servicesAccordion .accordion-item {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -3289,4 +3291,180 @@ body.loaded #preloader {
 
 #servicesAccordion .accordion-item h2{
     color: #1261ac;
+}
+
+
+/* ------------------------------
+   GLOBAL RESET (optional)
+--------------------------------*/
+.services {
+  background: #6ed1ffd6; /* Teal background like image */
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+./*services .container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}*/
+
+/* ------------------------------
+   TITLE SECTION
+--------------------------------*/
+.services__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.services__title h1.title {
+  color: black;
+  font-size: 38px;
+  line-height: 1.5;
+}
+
+.services__title .common__btn {
+  background: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: black;
+}
+
+.services__title .common__btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.services__title .common__btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ------------------------------
+   PARAGRAPH UNDER TITLE
+--------------------------------*/
+.services p {
+  color: black;
+  font-size: 17px;
+  margin-top: 20px;
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+/* ------------------------------
+   SERVICES LIST
+--------------------------------*/
+.services__wapper_list {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.services__wapper_list li {
+ display: grid;
+  grid-template-columns: 540px 1fr 80px; /* Number/Title | Description | Arrow */
+  align-items: center;
+  gap: 20px;
+  padding: 35px 0;
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.15);*/
+}
+
+/* NUMBER + SERVICE NAME */
+.service__name {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  white-space: nowrap;
+}
+
+.service__name span {
+  font-size: 22px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* DESCRIPTION */
+.describe {
+  max-width: 100%;
+  width: 100%;
+  text-align: left !important;
+  white-space: nowrap;        /* forces single line */
+  overflow: hidden;           /* prevents wrapping */
+  text-overflow: ellipsis;    /* optional: adds "..." if text is long */
+  color: #000;                /* (adjust color if needed) */
+  font-size: 18px;
+  line-height: normal;
+}
+
+/* ------------------------------
+   ARROW ICON BUTTON
+--------------------------------*/
+.icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.icon1:hover {
+  border-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.icon1 img {
+  width: 60px;
+  height: 60px;
+  transition: 0.3s ease;
+}
+
+.icon1 .whites {
+  display: block;
+}
+
+.icon1 .blacks {
+  display: none;
+}
+
+/* Hover: switch icons */
+.icon1:hover .whites {
+  display: none;
+}
+.icon1:hover .blacks {
+  display: block;
+}
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 992px) {
+  .services__title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service__name {
+    font-size: 28px;
+  }
+
+  .services__wapper_list li {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .describe {
+    max-width: 100%;
+  }
 }
