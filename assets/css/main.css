@@ -400,7 +400,7 @@ p {
         transform: translateX(0px)
     }
     100% {
-        transform: translateX(-4500px)
+        transform: translateX(-4000px)
     }
 }
 
@@ -3514,7 +3514,3 @@ body.loaded #preloader {
         width: 100%;
     }
 }
-
-
-
-
