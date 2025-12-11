@@ -153,7 +153,7 @@ p {
 
 @media(max-width: 576px) {
     .py__130 {
-        padding: 90px 0
+        padding: 45px 0
     }
 }
 
@@ -205,6 +205,12 @@ p {
         font-size: 35px;
         line-height: 37px
     }
+    .climax{
+        font-size: 25px;
+        line-height: 37px;
+        margin-top: -22px;
+        margin-bottom: -28px;
+    }
 }
 
 .title__black {
@@ -230,8 +236,7 @@ p {
 
 @media(max-width: 991px) {
     .circle {
-        width: 150px;
-        height: 150px
+        width: 180px;
     }
 }
 
@@ -375,7 +380,7 @@ p {
 
 @media(max-width: 768px) {
     .partner {
-        padding: 50px;
+        padding: 20px;
         margin-top: 70px
     }
 }
@@ -502,10 +507,11 @@ p {
         position: absolute;
         top: 100%;
         left: -100%;
-        min-height: 100vh;
-        min-width: 300px;
-        background-color: var(--btn-clr);
-        transition: all .5s ease-in-out
+        min-height: auto;
+        min-width: 100%;
+        background-color: #ffffff;
+        transition: all .5s ease-in-out;
+        padding-right: 10px 0px;
     }
 }
 
@@ -603,16 +609,47 @@ p {
     gap: 2px
 }
 
-.header__bottom .menu__icon i {
+.header__bottom .menu__icon img {
     font-size: 32px;
-    cursor: pointer
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 12px;
 }
 
+/* Default – Mobile First */
 .banner {
     background-color: #0f1b19;
-    padding-top: 100px;
-    padding-bottom: 90px
+    padding-top: 50px;       /* reduced for mobile */
+    padding-bottom: 50px;
 }
+.banner__content_number{
+    margin-top: -25px;
+}
+
+/* Tablet screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .banner {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    .banner__content_number{
+        margin-top: -25px;
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1200px) {
+    .banner {
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+    .banner__content_number{
+        margin-top: -45px;
+    }
+}
+
+
 
 .banner__content {
     position: relative;
@@ -642,8 +679,29 @@ p {
 
 @media(max-width: 576px) {
     .banner__content_title h1 {
-        font-size: 50px;
-        line-height: 53px
+        font-size: 60px;
+        line-height: 66px
+    }
+}
+
+/* Default – Mobile first */
+.home-banner {
+    max-width: 100%;
+    padding-left: 20px;     /* Fix for mobile */
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .home-banner {
+        padding-left: 40px;  /* Adjust for mid screens */
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .home-banner {
+        max-width: none;
+        padding-left: 100px; /* Only desktop spacing */
     }
 }
 
@@ -663,7 +721,7 @@ p {
 
 @media(max-width: 991px) {
     .banner__content_title p {
-        margin-top: 40px
+        margin-top: 34px
     }
 }
 
@@ -687,7 +745,8 @@ p {
 
 @media(max-width: 991px) {
     .banner__content .buttons {
-        margin-top: 40px
+        margin-top: 28px;
+        margin-bottom: 30px;
     }
 }
 
@@ -728,7 +787,7 @@ p {
 @media(max-width: 768px) {
     .banner__content_number {
         padding: 15px;
-        margin-top: 50px
+        margin-top: -25px
     }
 }
 
@@ -773,7 +832,8 @@ p {
 
 @media(max-width: 576px) {
     .banner__content_number p {
-        font-size: 14px
+        font-size: 14px;
+        padding-left: 5px;
     }
 }
 
@@ -937,7 +997,7 @@ p {
 @media(max-width: 576px) {
     .banner2__number {
         max-width: 100%;
-        margin-top: 50px
+        margin-top: 50px;
     }
 }
 
@@ -1055,7 +1115,7 @@ p {
 
 @media(max-width: 991px) {
     .about__wapper_left .circle {
-        margin-top: 40px
+        margin-top: 14px
     }
 }
 
@@ -1166,7 +1226,7 @@ p {
 
 @media(max-width: 576px) {
     .projects {
-        padding-top: 200px
+        padding-top: 38px
     }
 }
 
@@ -1249,9 +1309,25 @@ p {
     border-radius: 10px
 }
 
-.video_home{
-    padding-bottom: 167px;
+/* Default – Mobile First */
+.video_home {
+    padding-bottom: 13px;   /* smaller padding for mobile */
 }
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .video_home {
+        padding-bottom: 100px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .video_home {
+        padding-bottom: 167px; /* your original value */
+    }
+}
+
 
 .projects__wapper_card .prj__title {
     font-family: Kanit;
@@ -3252,33 +3328,77 @@ p {
         text-align: center;
     }
 
-/* === PRELOADER BASE === */
+/* PRELOADER FILL FULL SCREEN */
 #preloader {
   position: fixed;
-  inset: 0;
-  background: #ffffff;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 999999;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
-  overflow: hidden;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
 }
 
-/* === FULL SCREEN VIDEO === */
+/* VIDEO FIX */
 .plane-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover; /* Makes video cover full screen */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  margin: 0;
+  padding: 0;
 }
 
-/* === HIDE PRELOADER === */
+/* HIDE PRELOADER */
 body.loaded #preloader {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
+}
+
+/* MOBILE FIX */
+@media (max-width: 767px) {
+  #preloader, 
+  .plane-video {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
 }
 
 
+/*about-home*/
+
+/* Default — Mobile First */
+#about-home {
+    width: 100%;        /* Full width for mobile */
+    margin-left: 0;     /* No overflow */
+}
+
+/* Tablets and small laptops */
+@media (min-width: 768px) and (max-width: 1199px) {
+    #about-home {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Desktop and large screens */
+@media (min-width: 1200px) {
+    #about-home {
+        width: 856px;
+        margin-left: -42px;
+    }
+}
 
 #servicesAccordion .accordion-item {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -3338,6 +3458,7 @@ body.loaded #preloader {
   font-weight: 600;
   transition: 0.3s ease;
   color: black;
+  width: 56%;
 }
 
 .services__title .common__btn img {
