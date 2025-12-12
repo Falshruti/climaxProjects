@@ -202,7 +202,7 @@ p {
 
 @media(max-width: 768px) {
     .title {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 37px
     }
     .climax{
@@ -642,14 +642,12 @@ p {
 @media (min-width: 1200px) {
     .banner {
         padding-top: 100px;
-        padding-bottom: 90px;
+        padding-bottom: 120px;
     }
     .banner__content_number{
         margin-top: -45px;
     }
 }
-
-
 
 .banner__content {
     position: relative;
@@ -765,7 +763,7 @@ p {
     border-radius: 10px;
     padding: 30px 45px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: -33px;
     z-index: 1;
 }
 
@@ -1029,7 +1027,8 @@ p {
 }
 
 .about__title .title {
-    max-width: 100%
+    max-width: 100%;
+    margin-top: -57px;
 }
 
 
@@ -2317,7 +2316,7 @@ p {
 
 @media(max-width: 1200px) {
     .page__header {
-        padding: 50px 0
+        padding-bottom:50px;
     }
 }
 
@@ -3458,7 +3457,6 @@ body.loaded #preloader {
   font-weight: 600;
   transition: 0.3s ease;
   color: black;
-  width: 56%;
 }
 
 .services__title .common__btn img {
