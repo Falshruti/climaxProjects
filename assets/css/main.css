@@ -209,7 +209,7 @@ p {
         font-size: 25px;
         line-height: 37px;
         margin-top: -22px;
-        margin-bottom: -28px;
+        margin-bottom: 7px;
     }
 }
 
@@ -386,7 +386,7 @@ p {
 }
 
 .partner__wapper {
-    max-width: 1120px;
+    /*max-width: 1120px;*/
     margin: auto;
     overflow: hidden
 }
@@ -1028,7 +1028,7 @@ p {
 
 .about__title .title {
     max-width: 100%;
-    margin-top: -57px;
+    /*margin-top: -57px;*/
 }
 
 
@@ -1644,7 +1644,7 @@ p {
 }
 
 .testimonial__wapper .review {
-    font-size: 22px;
+    font-size: 16px;
     color: var(--grayWhite-clr);
     font-weight: 6000;
     margin-bottom: 50px;
@@ -3444,14 +3444,14 @@ body.loaded #preloader {
 .services__title h1.title {
   color: black;
   font-size: 38px;
-  line-height: 1.5;
+  /*line-height: 1.5;*/
 }
 
 .services__title .common__btn {
   background: none;
   padding: 14px 28px;
   border-radius: 10px;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   gap: 10px;
   font-weight: 600;
@@ -3633,3 +3633,9 @@ body.loaded #preloader {
         width: 100%;
     }
 }
+
+.partner__logo{
+    margin-right: 110px;
+}
+
+
