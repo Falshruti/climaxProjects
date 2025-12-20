@@ -402,7 +402,7 @@ p {
 
 @media(max-width: 768px) {
     .partner {
-        padding: 20px;
+        padding: 4px 20px;
         margin-top: 70px
     }
 }
@@ -1780,7 +1780,7 @@ p {
 }
 
 .testimonial .next-arrow {
-    left: 41.5%
+    left: 32.5%
 }
 
 .testimonial__2 {
@@ -3654,7 +3654,7 @@ body.loaded #preloader {
 /* Hide image/video shifts on smaller screens */
 @media(max-width: 991px) {
     .banner__right {
-        min-height: 350px;
+        min-height: 270px;
     }
 
     .banner__right .bg__img {
@@ -3676,5 +3676,3 @@ body.loaded #preloader {
 .partner__logo{
     margin-right: 110px;
 }
-
-
