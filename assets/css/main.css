@@ -3428,13 +3428,19 @@ body.loaded #preloader {
         width: 100%;
         margin-left: 0;
     }
+    .about__title .title {
+        margin-top: 0px !important;
+    }
 }
 
 /* Desktop and large screens */
 @media (min-width: 1200px) {
     #about-home {
-        width: 856px;
+        width: 78%;
         margin-left: -42px;
+    }
+    .about__title .title {
+        margin-top: -43px !important;
     }
 }
 
@@ -3676,3 +3682,5 @@ body.loaded #preloader {
 .partner__logo{
     margin-right: 110px;
 }
+
+
