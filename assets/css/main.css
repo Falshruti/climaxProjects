@@ -1779,9 +1779,17 @@ p {
     right: 39%
 }
 
+/* Mobile (default) */
 .testimonial .next-arrow {
-    left: 32.5%
+    left: 32.5%;
 }
+
+/* Desktop */
+@media (min-width: 992px) {
+    .testimonial .next-arrow {
+        left: 41.5%;
+    }
+
 
 .testimonial__2 {
     background-color: rgba(0, 0, 0, 0)
