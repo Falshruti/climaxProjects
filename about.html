@@ -30,87 +30,105 @@
       z-index: 9999;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+        /* Mobile default */
+    .banner-desktop {
+      display: none;
+    }
+
+    /* Desktop view */
+    @media (min-width: 768px) {
+      .banner-mobile {
+        display: none;
+      }
+
+      .banner-desktop {
+        display: block;
+      }
+    }
+
     </style>
   </head>
   
   
   <body class="home1">
-     <!-- --------------- Start Header ------------ -->
-    <header class="header header__1">
     
-      <!-- --- Bottom header Start -->
-     <div class="header__bottom">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between">
-            <div>
-              <a href="index.html" class="d-flex align-items-center header__bottom_logo">
-                <img src="assets/img/logo-climax.png" alt=""  width="100px"/>
-              </a>
-            </div>
-            <nav class="header__bottom_navbar">
-              <ul class="d-xl-flex menu__list">
-                <li class="dropdown__container">
-                  <div class="d-flex justify-content-between align-items-center gap-1">
-                    <a href="index.html"> Home </a>
-                    <i class="bi bi-chevron-down"></i>
-                  </div>
-                </li>
-                <li class="dropdown__container">
-                  <div
-                    class="d-flex justify-content-between align-items-center gap-1"
-                  >
-                    <a href="about.html"> About Us </a>
-                  </div>
-                </li>
-                <li class="dropdown__container">
-                  <div
-                    class="d-flex justify-content-between align-items-center gap-1"
-                  >
-                    <a href="services.html"> Services </a>
-                    <i class="bi bi-chevron-down"></i>
-                  </div>
+    <!-- --------------- Start Header ------------ -->
+    <header class="header header__1">
 
-                </li>
-                <li class="dropdown__container">
-                  <div
-                    class="d-flex justify-content-between align-items-center gap-1"
-                  >
-                    <a href="career.html"> Career </a>
-                    <i class="bi bi-chevron-down"></i>
-                  </div>
-                </li>
-                <li class="dropdown__container">
-                  <div
-                    class="d-flex justify-content-between align-items-center gap-1"
-                  >
-                    <a href="contact.html"> Contact Us </a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-            <div class="d-xl-block d-none">
-              <a href="#" class="common__btn">
-                <span> Get Started Now</span>
-                <img src="assets/icons/arrow-up-right.svg" alt="" />
-              </a>
+        <!-- --- Bottom header Start -->
+        <div class="header__bottom">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <a href="index.html" class="d-flex align-items-center header__bottom_logo">
+                            <img src="assets/img/logo-climax.png" alt="" width="100px" />
+                        </a>
+                    </div>
+                    <nav class="header__bottom_navbar">
+                        <ul class="d-xl-flex menu__list">
+                            <li class="dropdown__container">
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <a href="index.html"> Home </a>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                            </li>
+                            <li class="dropdown__container">
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <a href="about.html"> About us </a>
+                                </div>
+                            </li>
+                            <li class="dropdown__container">
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <a href="services.html"> Services </a>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+
+                            </li>
+                            <li class="dropdown__container">
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <a href="career.html"> Career </a>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                            </li>
+                            <li class="dropdown__container">
+                                <div class="d-flex justify-content-between align-items-center gap-1">
+                                    <a href="contact.html"> Contact us </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="d-xl-block d-none">
+                        <a href="#" class="common__btn">
+                            <span> Get started now</span>
+                            <img src="assets/icons/arrow-up-right.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="menu__icon d-block d-xl-none">
+                        <img src="assets/img/mobile-toggleicon.png" width="13%">
+                    </div>
+                </div>
             </div>
-            <div class="menu__icon d-block d-xl-none">
-              <img src="assets/img/mobile-toggleicon.png" width="13%">
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- --- Bottom header End -->
+        <!-- --- Bottom header End -->
     </header>
     <!-- --------------- End Header ------------ -->
 
     <!-- --------------- Start page header ----------- -->
       <section class="page__header position-relative">
+        <!-- Mobile banner -->
+        <img
+          src="assets/img/about/about us 1.jpg"
+          alt="About Us Banner Mobile"
+          class="img-fluid w-100 banner-mobile"
+        />
+
+        <!-- Desktop banner -->
         <img
           src="assets/img/about/aboutus-banner.jpg"
-          alt="About Us Banner"
-          class="img-fluid w-100"
+          alt="About Us Banner Desktop"
+          class="img-fluid w-100 banner-desktop"
         />
+
         <div
           class="page__header__content position-absolute top-50 start-50 translate-middle text-center text-white"
           data-aos="fade-up"
@@ -118,8 +136,11 @@
           data-aos-offset="0"
           data-aos-duration="1000"
         >
-          </div>
+          <!-- Content here -->
+        </div>
       </section>
+
+
     <!-- --------------- End page header ----------- -->
 
     <!-- --------------- Start About ----------- -->
@@ -127,36 +148,40 @@
       <div class="container">
         <!-- TItle -->
         <div
-          class="row justify-content-between about__title"
+          class="row about__title"
           data-aos="fade-down"
           data-aos-delay="100"
           data-aos-offset="0"
           data-aos-duration="1000">
-          <div class="col-md-12 text-center" style="padding: 0px 20px;">
+          <div class="col-md-12">
             <div>
               <h2 class="title" style="text-align: center;">
-                When brands want to be remembered, <br>they come to Kolhapur.
+                Brands that want to be remembered come to Kolhapur
               </h2>
-              <p style="text-align: center;margin: 0 auto;">
-                <br>For over three decades, Climax Advertising has been the creative heartbeat of Kolhapur, shaping brand
-                 stories that don’t just land, but linger in minds. <br>We began when hoardings were hand-painted, and marketing 
-                 meant more than metrics. Today, we build campaigns that travel from print to pixel, <br>from katta conversations to 
-                 smartphone scrolls.
-              </p>
-              <p style="text-align: center; margin: 0 auto;">
-                <br>Across Maharashtra, Goa, and Karnataka, brands trust us to blend local insight with creative impact, <br>whether it’s a jingle that sticks in your head or a digital strategy that moves the needle.
-              </p>
-               <br><p style="text-align: center; margin: 0 auto;">We work across mediums, markets, and mindsets with one simple belief:</p>
+              <div class="row pt-4">
+                <div class="col-md-6">
+                   <img src="assets/img/nadkhula unit.png" style="margin: 0 auto; width: 100%;">
+                </div>
+                <div class="col-md-6" style="padding: 0px 0px 0px 0px;">
+                  <p style="text-align: left;margin: 0 auto;">
+                    <br>For over three decades, Climax Advertising has been the creative heartbeat of Kolhapur, shaping brand
+                     stories that don’t just land, but linger in minds. <br><br>We began when hoardings were hand-painted, and marketing 
+                     meant more than metrics. Today, we build campaigns that travel from print to pixel, <br><br>from katta conversations to 
+                    social feeds.
+                  </p>
+                  <p style="text-align: left; margin: 0 auto;">
+                    <br>Across Maharashtra, Goa, and Karnataka, brands trust us to blend local insight with creative impact, <br>whether it’s a jingle that sticks in your head or a digital strategy that moves the needle.
+                  </p>
+                   <br>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="">
-      <div class="row mt-4 m-0 p-0">
-        <img src="assets/img/nadkhula unit.png" style="margin: 0 auto; width: 65%;">
-      </div>
-      </section>
+    
       <!-- --------------- Start About ----------- -->
     <section class="about about__page py__130" style="padding-bottom: 5px;">
       <div class="container">
@@ -204,7 +229,7 @@
                   <img src="assets/img/eye.svg" style="width: 50px; padding-right: 13px;">
                   <h5>Our Vision</h5>
                 </div>
-                <p style="color: white;">To be a trusted creative partner for brands across industries and geographies.
+                <p style="color: white;">To be a trusted creative partner for brands across industries and markets.
                   We aim to deliver impactful advertising solutions that are grounded in cultural understanding, powered by strategy, and shaped to stand out in a fast-changing world.</p>
               </div>
               <div class="col-md-1" style="border-right: 1px solid white; opacity: 0.5;"></div>
@@ -254,7 +279,7 @@
           <div class="card-body">
             <h5 class="card-title mb-1">Uday Joshi</h5>
             <p class="card-subtitle text-muted mb-3 text-center">Founder & Director</p>
-            <button class="btn read-btn" data-bs-toggle="modal" data-bs-target="#udayModal">Read More</button>
+            <button class="btn read-btn" data-bs-toggle="modal" data-bs-target="#udayModal">Read more</button>
           </div>
         </div>
       </div>
@@ -266,7 +291,7 @@
           <div class="card-body">
             <h5 class="card-title mb-1">Sundeep Desai</h5>
             <p class="card-subtitle text-muted mb-3 text-center">GM – Operations</p>
-            <button class="btn read-btn" data-bs-toggle="modal" data-bs-target="#sundeepModal">Read More</button>
+            <button class="btn read-btn" data-bs-toggle="modal" data-bs-target="#sundeepModal">Read more</button>
           </div>
         </div>
       </div>
@@ -278,7 +303,7 @@
           <div class="card-body">
             <h5 class="card-title mb-1">Mangesh Joshi</h5>
             <p class="card-subtitle text-muted mb-3 text-center">Director</p>
-            <button class="btn read-btn" data-bs-toggle="modal" data-bs-target="#mangeshModal" >Read More</button>
+            <button class="btn read-btn" data-bs-toggle="modal" data-bs-target="#mangeshModal" >Read more</button>
           </div>
         </div>
       </div>
@@ -290,7 +315,7 @@
           <div class="card-body">
             <h5 class="card-title mb-1">Rucha Joshi</h5>
             <p class="card-subtitle text-muted mb-3 text-center">Head of Digital</p>
-            <button class="btn read-btn" data-bs-toggle="modal" data-bs-target="#ruchaModal" >Read More</button>
+            <button class="btn read-btn" data-bs-toggle="modal" data-bs-target="#ruchaModal" >Read more</button>
           </div>
         </div>
       </div>
@@ -318,7 +343,7 @@
         <!-- Right Side Content (Scrollable) -->
         <div class="col-md-8 d-flex flex-column" style="max-height: 600px; overflow-y: auto; padding: 0 20px;">
           <div class="modal-header sticky-top bg-white">
-            <h4 class="modal-title" id="udayModalLabel">About</h4>
+            <h4 class="modal-title" id="udayModalLabel">About Uday Joshi</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -333,10 +358,10 @@
               and lasting, right from Kolhapur.
               <br><br>
               Since 1995, Uday has led Climax with sharp strategy, a client-first mindset, and a deep understanding of both 
-              media and market. From print campaigns to digital pivots, he’s seen the industry evolve and evolved with it.
+              media and the market. From print campaigns to digital pivots, he’s seen the industry evolve and grown with it.
               <br><br>
               He doesn’t believe in shortcuts, but he does believe in smart budgets, strong ideas, and campaigns that stick. 
-              And while trends may come and go, Uday’s approach remains the same: clear, consistent, and deeply connected to the client’s goal.
+              And while trends may come and go, Uday’s approach remains the same: clear, consistent, and deeply connected to the client’s goals.
             </p>
           </div>
         </div>
@@ -363,7 +388,7 @@
         <!-- Right Side Content (Scrollable) -->
         <div class="col-md-8 d-flex flex-column" style="max-height: 600px; overflow-y: auto; padding: 0 20px;">
           <div class="modal-header sticky-top bg-white">
-            <h4 class="modal-title" id="udayModalLabel">About</h4>
+            <h4 class="modal-title" id="udayModalLabel">About Sundeep Desai</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -403,18 +428,18 @@
         <!-- Right Side Content (Scrollable) -->
         <div class="col-md-8 d-flex flex-column" style="max-height: 600px; overflow-y: auto; padding: 0 20px;">
           <div class="modal-header sticky-top bg-white">
-            <h4 class="modal-title" id="udayModalLabel">About</h4>
+            <h4 class="modal-title" id="udayModalLabel">About Mangesh Joshi</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p style="font-size: 18px; text-align: center;">
-              <b>"Likes his campaigns like his paintings-  <br>
+              <b>"Likes his campaigns like his paintings—  <br>
               layered, balanced, and full of life."</b>
             </p>
             <p>
               An architect by education, a marketer by instinct, and an artist by heart, Mangesh Joshi brings the perfect blend of structure and creativity to Climax Digital. After completing his B.Arch from Pune University and gaining agency experience across categories like FMCG, entertainment, and fashion, he shifted gears into advertising full-time.
               <br><br>
-              His eye for detail is sharp, his problem-solving sharper. Mangesh believes leadership isn’t about titles, it’s about knowing the process, trusting the people, and pushing the work forward.
+              His eye for detail is sharp, his problem-solving sharper. Mangesh believes leadership isn’t about titles— it’s about knowing the process, trusting the people, and pushing the work forward.
             </p>
           </div>
         </div>
@@ -440,7 +465,7 @@
         <!-- Right Side Content (Scrollable) -->
         <div class="col-md-8 d-flex flex-column" style="max-height: 600px; overflow-y: auto; padding: 0 20px;">
           <div class="modal-header sticky-top bg-white">
-            <h4 class="modal-title" id="udayModalLabel">About</h4>
+            <h4 class="modal-title" id="udayModalLabel">About Rucha Joshi</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -449,7 +474,7 @@
               and her memes on point."</b>
             </p>
             <p>
-              A commerce grad from BMCC Pune and a business management postgrad from Ontario, Canada; Rucha Joshi brings a global perspective and grounded instinct to every digital campaign. With a background in managing large-scale social and outdoor strategies for brands across real estate, jewellery, and education, she knows how to take a brand from quiet to scroll-stopping.
+              A commerce grad from BMCC Pune and a business management postgraduate from Ontario, Canada, Rucha Joshi brings a global perspective and grounded instinct to every digital campaign. With a background in managing large-scale social and outdoor strategies for brands across real estate, jewellery, and education, she knows how to take a brand from quiet to scroll-stopping.
               <br><br>
               At Climax Digital, she’s the driving force behind the agency’s fast-paced, high-performance culture. Clear-headed, people-first, and relentlessly focused on results, Rucha makes the digital game feel effortless.
             </p>
