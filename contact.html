@@ -30,6 +30,21 @@
       z-index: 9999;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+     /* Mobile default */
+        .banner-desktop {
+          display: none;
+        }
+
+        /* Desktop view */
+        @media (min-width: 768px) {
+          .banner-mobile {
+            display: none;
+          }
+
+          .banner-desktop {
+            display: block;
+          }
+        }
     </style>
   </head>
   
@@ -353,4 +368,3 @@ Let’s sit down over crazy ideas<br> and a cup of phakkad chaha
   </body>
 
 </html>
-
